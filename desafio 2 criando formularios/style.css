@@ -1,0 +1,200 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+body::before{
+    content: '';
+    width: 100%;
+    height: 465px;
+    background:#293241;
+    display: block;
+    position: absolute;
+    z-index: -2;
+}
+body {
+    background: #BFD7E4;
+}
+.page {
+    width: 750px;
+    margin: 0 auto;
+    padding: 107px 0;
+}
+header {
+    /* margin-bottom: 32px; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+header h1{
+    font-family: 'Staatliches';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 45px;
+    color: #FFFFFF;
+    padding-bottom: 13px;
+}
+header p{
+    font-size: 16px;
+    line-height: 24px;
+    color: #FFFFFF;
+    padding-bottom: 28px;
+}
+header img{
+    width: 225px;
+    height: 100px;
+    margin-bottom: 32px;
+}
+.container{
+    background: #F67669;
+    padding: 41px 277.7px;
+    border-radius:20px 20px 0 0;
+}
+.container h2{
+    font-family: 'Staatliches';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 34px;
+    color: #FFFFFF;
+}
+form{
+    background: #FFFFFF;
+    min-height:300px;
+    padding: 64px;
+    border-radius: 0px 0px 20px 20px;
+}
+fieldset{
+    border:none;
+}
+.fieldset-wrapper label, 
+.checkbox-wrapper label{
+    font-size: 14px;
+    line-height: 24px;
+    color: #4E4958;
+}
+.fieldset-wrapper span{
+    font-size: 12px;
+    line-height: 20px;
+    color: #C1BCCC;
+}
+.fieldset-wrapper span:hover{
+    color: #827f8a;
+}
+.fieldset-wrapper legend {
+    display: flex;
+    justify-content: center;
+
+    font-family: 'Staatliches';
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 34px;
+    color: #253B51;
+
+    border-bottom: 1px solid #E6E6F0;
+    width: 100%;
+    padding-bottom: 8px;
+    margin: 0 auto 32px;
+}
+.input-wrapper{
+    display: flex;
+    flex-direction: column;
+    /* width: 100%; */
+}
+.input-wrapper input,
+.input-wrapper select,
+.input-wrapper textarea{
+    width: 100%;
+    height: 55px;
+    background: #FAFAFC;
+    border: 1px solid #E6E6F0;
+    border-radius: 8px;
+    margin-bottom: 32px;
+    padding: 0 24px;
+    box-sizing: border-box;
+}
+.input-names{
+    display: flex;
+    width: 100%;
+    gap: 22px;
+}
+.input-names input{
+    width: 300px;
+    margin-bottom: 18px;
+}
+.input-wrapper select{
+    appearance: none;
+    -webkit-appearance: none;
+
+    background-image: url("data:image/svg+xml,%0A%3Csvg width='24' height='24' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cg clip-path='url(%23clip0_1_54)'%3E%3Cpath d='M8 10L12 14L16 10' stroke='%239C98A6' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/g%3E%3Cdefs%3E%3CclipPath id='clip0_1_54'%3E%3Crect width='24' height='24' fill='white'/%3E%3C/clipPath%3E%3C/defs%3E%3C/svg%3E%0A");
+    background-repeat: no-repeat;
+    background-position: right 0 top 50%;
+
+}
+.input-wrapper textarea{
+    height: 166px;
+    padding: 0 12px;
+}
+.checkbox-wrapper{
+    position: relative;
+    margin-bottom: 36px;
+}
+.checkbox-wrapper input{
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    opacity: 0;
+}
+.checkbox-wrapper label{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+.checkbox-wrapper label::before{
+    content: '';
+    width: 24px;
+    height: 24px;
+
+    background: #FAFAFC;
+    border: 1px solid #E6E6F0;
+    border-radius: 8px;
+}
+.checkbox-wrapper input:checked + label::before{
+    background-image: url("data:image/svg+xml,%3Csvg width='18' height='14' viewBox='0 0 18 14' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M6 11.17L1.83 7L0.410004 8.41L6 14L18 2L16.59 0.589996L6 11.17Z' fill='%2342D3FF'/%3E%3C/svg%3E%0A");
+    background-repeat: no-repeat;
+    background-position: right 50% top 50%;
+}
+.date{
+    display: flex;
+    gap: 10px;
+}
+.date > div:nth-child(1){
+    width: 100%;
+    margin-right: 22px;
+}
+.footer input{
+    background: #F67669;
+    border-radius: 8px;
+    border: none;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 15px 40px;
+    gap: 10px;
+    margin-top:42px;
+
+    width: 100%;
+
+    font-family: 'Staatliches';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 26px;
+    color: #FFFFFF;
+}
+.footer input:hover{
+    background:#f84531;
+}
